@@ -91,8 +91,8 @@ public class N2NSettingModelDao extends AbstractDao<N2NSettingModel, Long> {
                 "\"IS_SELCECTED\" INTEGER NOT NULL ," + // 22: isSelcected
                 "\"GATEWAY_IP\" TEXT," + // 23: gatewayIp
                 "\"DNS_SERVER\" TEXT," + // 24: dnsServer
-                "\"ENCRYPTION_MODE\" TEXT ," + // 25: encryptionMode
-                "\"HEADER_ENC\" INTEGER NOT NULL);"); // 26: headerEnc
+                "\"ENCRYPTION_MODE\" TEXT," + // 25: encryptionMode
+                "\"HEADER_ENC\" INTEGER NOT NULL );"); // 26: headerEnc
     }
 
     /** Drops the underlying database table. */

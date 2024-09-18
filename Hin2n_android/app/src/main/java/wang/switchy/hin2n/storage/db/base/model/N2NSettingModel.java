@@ -244,7 +244,7 @@ public class N2NSettingModel /*implements Parcelable*/ {
         this.headerEnc = headerEnc;
     }
 
-    @Generated
+    @Generated(hash = 1352638944)
     public N2NSettingModel(Long id, int version, String name, int ipMode, String ip, String netmask, String community, String password, String devDesc,
             String superNode, boolean moreSettings, String superNodeBackup, String macAddr, int mtu, String localIP, int holePunchInterval,
             boolean resoveSupernodeIP, int localPort, boolean allowRouting, boolean dropMuticast, boolean useHttpTunnel, int traceLevel,
@@ -278,7 +278,7 @@ public class N2NSettingModel /*implements Parcelable*/ {
         this.headerEnc = headerEnc;
     }
 
-    @Generated
+    @Generated(hash = 998225630)
     public N2NSettingModel() {
     }
 
