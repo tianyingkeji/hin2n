@@ -23,6 +23,13 @@
                 android:layout_marginTop="20dp"
                 android:src="@mipmap/ic_state_connect"/>
 
+            <ImageView
+                android:id="@+id/iv_fly_btn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/ic_fly_ctrl"/>
+
             <!--<com.wang.avi.AVLoadingIndicatorView-->
             <!--android:id="@+id/loading_view"-->
             <!--android:layout_marginTop="140dp"-->

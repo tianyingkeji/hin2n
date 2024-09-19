@@ -25,26 +25,39 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp">
-                <ImageView
-                    android:id="@+id/iv_connect_btn"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="20dp"
-                    android:src="@mipmap/ic_state_connect"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_line_func"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+                    <ImageView
+                        android:id="@+id/iv_connect_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@mipmap/ic_state_connect"/>
+
+                    <ImageView
+                        android:id="@+id/iv_fly_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20dp"
+                        android:src="@mipmap/ic_fly_ctrl"/>
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/tv_current_setting"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/iv_connect_btn"
+                    android:layout_below="@id/layout_line_func"
                     android:layout_marginTop="10dp"
                     android:text="Current Setting : "
                     android:textSize="15sp" />
 
                 <RelativeLayout
                     android:id="@+id/rl_current_setting_item"
-                    android:layout_below="@id/iv_connect_btn"
+                    android:layout_below="@id/layout_line_func"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@id/tv_current_setting">
