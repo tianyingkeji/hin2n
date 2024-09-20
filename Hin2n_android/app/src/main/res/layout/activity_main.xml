@@ -15,20 +15,26 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <ImageView
-                android:id="@+id/iv_connect_btn"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:src="@mipmap/ic_state_connect"/>
 
-            <ImageView
-                android:id="@+id/iv_fly_btn"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="20dp"
-                android:src="@mipmap/ic_fly_ctrl"/>
+            <LinearLayout
+                android:id="@+id/layout_line_func"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+                <ImageView
+                    android:id="@+id/iv_connect_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/ic_state_connect"/>
+
+                <ImageView
+                    android:id="@+id/iv_fly_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/ic_fly_ctrl"/>
+            </LinearLayout>
 
             <!--<com.wang.avi.AVLoadingIndicatorView-->
             <!--android:id="@+id/loading_view"-->
@@ -44,7 +50,7 @@
                 android:id="@+id/rl_current_setting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/iv_connect_btn"
+                android:layout_below="@id/layout_line_func"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp">
