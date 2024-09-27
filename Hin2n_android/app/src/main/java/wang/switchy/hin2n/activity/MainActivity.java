@@ -178,6 +178,15 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+        ImageView mIvFlyBtn =findViewById(R.id.iv_fly_btn);
+        mIvFlyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CameraControlActivity.class);
+                startActivity(intent);
+            }
+        });
+
         mCurrentSettingItem = (RelativeLayout) findViewById(R.id.rl_current_setting_item);
         mCurrentSettingItem.setOnClickListener(new View.OnClickListener() {
             @Override

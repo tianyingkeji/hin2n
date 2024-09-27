@@ -50,6 +50,8 @@
 
         <activity
             android:name=".activity.ListActivity"/>
+        <activity
+            android:name=".activity.CameraControlActivity"/>
 
         <activity
             android:name=".activity.SettingDetailsActivity"/>
