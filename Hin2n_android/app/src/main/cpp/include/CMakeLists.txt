@@ -1,11 +1,12 @@
-cmake_minimum_required(VERSION 3.22.1)
+cmake_minimum_required(VERSION 3.10.2)
 #自动生成，自己的项目名
 project("ffmpegndk")
 
 message("start............................................................")
 # 1. 定义so库和头文件所在目录相对与脚本的位置的变量，方面后面使用
-set(ffmpeg_lib_dir_neway ${CMAKE_SOURCE_DIR}/../../../libs/${ANDROID_ABI})
-set(ffmpeg_head_dir ${CMAKE_SOURCE_DIR}/include)
+#set(ffmpeg_lib_dir_neway ${CMAKE_SOURCE_DIR}/libs/${ANDROID_ABI})
+set(ffmpeg_lib_dir_neway ${CMAKE_SOURCE_DIR}/libs/armv8-a)
+set(ffmpeg_head_dir ${CMAKE_SOURCE_DIR}/src/main/cpp/include)
 
 # 2. 添加头文件目录
 include_directories(${ffmpeg_head_dir})

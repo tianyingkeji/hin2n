@@ -151,3 +151,5 @@ add_library(uip SHARED
 
 add_library(slog SHARED src/main/cpp/slog/slog.c)
 target_link_libraries(slog log)
+
+ADD_SUBDIRECTORY(src/main/cpp/include)
