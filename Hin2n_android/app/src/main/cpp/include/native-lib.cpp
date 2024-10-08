@@ -7,16 +7,15 @@ extern "C" {
 #include "libavcodec/avcodec.h"
 }
 
-extern "C" JNIEXPORT jstring JNICALL
-Java_com_neway_ffmpegndk_MainActivity_stringFromJNI(
-        JNIEnv* env,
-        jobject /* this */) {
-    std::string hello = "Hello from C++";
-    return env->NewStringUTF(hello.c_str());
-}
-
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_neway_ffmpegndk_MainActivity_getConfiguration(JNIEnv *env, jobject thiz) {
+Java_wang_switchy_hin2n_activity_CameraControlActivity_stringFromJNI(JNIEnv *env, jobject thiz) {
+    // TODO: implement stringFromJNI()
+    return env->NewStringUTF("ssssss");
+}
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_wang_switchy_hin2n_activity_CameraControlActivity_getConfiguration(JNIEnv *env, jobject thiz) {
+    // TODO: implement getConfiguration()
     return env->NewStringUTF(avcodec_configuration());
 }

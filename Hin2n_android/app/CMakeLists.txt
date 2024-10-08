@@ -1,5 +1,5 @@
 project(Hin2n)
-cmake_minimum_required(VERSION 3.4.1)
+cmake_minimum_required(VERSION 3.10.2)
 
 # N2n information
 set(N2N_VERSION 2.9.0)

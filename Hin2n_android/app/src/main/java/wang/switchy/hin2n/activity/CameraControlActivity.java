@@ -1,6 +1,7 @@
 package wang.switchy.hin2n.activity;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import wang.switchy.hin2n.R;
 import wang.switchy.hin2n.template.BaseTemplate;
@@ -18,7 +19,9 @@ public class CameraControlActivity extends BaseActivity {
 
     @Override
     protected void doOnCreate(Bundle savedInstanceState) {
+        TextView tv=(TextView) findViewById(R.id.ffmpeg_info_view);
 
+        tv.setText(getConfiguration());
     }
 
     @Override
